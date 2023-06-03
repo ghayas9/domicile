@@ -1,0 +1,22 @@
+.primary__button {
+  button {
+    width: 100%;
+    background: $--light-green-color;
+    color: black;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    p {
+      color: black;
+    }
+    svg {
+      margin-left: 0.6rem;
+    }
+  }
+}

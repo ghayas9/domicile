@@ -1,0 +1,31 @@
+.top__nav {
+  height: 70px;
+  margin-top: 2.3rem;
+  background-color: white;
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+  }
+  &--logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 75px;
+    }
+  }
+
+  &--links {
+    ul {
+      display: flex;
+      li {
+        margin-left: 1rem;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

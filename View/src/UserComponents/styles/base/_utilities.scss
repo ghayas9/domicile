@@ -1,0 +1,38 @@
+.container {
+  padding: 1rem 2rem;
+  @include respond(tab-port) {
+    padding: 1rem;
+  }
+  @include respond(phone) {
+    padding: 1rem 0.3rem;
+  }
+}
+
+.simple-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}

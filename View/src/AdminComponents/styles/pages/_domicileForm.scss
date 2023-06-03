@@ -1,0 +1,34 @@
+.domicile__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--container {
+    background-color: #f5f7f4;
+    width: 60%;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  &--input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    label {
+      font-size: 0.9rem;
+    }
+    select {
+      background-color: #e6e0e0;
+      border-radius: 7px;
+      padding: 2px 7px;
+      height: 29px;
+      border: 1px solid gray;
+    }
+    input {
+      background-color: #e6e0e0;
+      border-radius: 7px;
+      padding: 2px 7px;
+      height: 25px;
+      border: 1px solid gray;
+    }
+  }
+}

@@ -1,0 +1,353 @@
+html {
+  font-family: "Axiforma", sans-serif;
+}
+
+body {
+  background-color: rgb(76, 132, 25) !important;
+}
+
+a {
+  color: black;
+}
+
+/*
+0-600px         Phone
+600-900px       Tablet portrait
+900-1200px      Tablet landscape
+[1200-1800]     is where our normal styles apply 
+1800px + :      Big desktop
+Breakpoints arguments choices:
+- phone
+- tab-port 
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid  > shape  layout  > components
+*/
+.container {
+  padding: 1rem 2rem;
+}
+@media (max-width: 60em) {
+  .container {
+    padding: 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .container {
+    padding: 1rem 0.3rem;
+  }
+}
+
+.simple-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.primary__button button {
+  width: 100%;
+  background: #86ab28;
+  color: black;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.primary__button button p {
+  color: black;
+}
+.primary__button button svg {
+  margin-left: 0.6rem;
+}
+
+.top__nav {
+  height: 70px;
+  margin-top: 2.3rem;
+  background-color: white;
+}
+.top__nav--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 20px;
+}
+.top__nav--logo {
+  display: flex;
+  align-items: center;
+}
+.top__nav--logo img {
+  height: 75px;
+}
+.top__nav--links ul {
+  display: flex;
+}
+.top__nav--links ul li {
+  margin-left: 1rem;
+}
+.top__nav--links ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.login__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login__form form {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+}
+.login__form--container {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__form--box {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.login__form--box label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.login__form--input {
+  position: relative;
+}
+.login__form--input input {
+  position: relative;
+  width: 92%;
+  height: 30px;
+  border-radius: 12px;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+}
+.login__form--input svg {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 1.4rem;
+  bottom: 0;
+  height: 100%;
+  color: #86ab28;
+}
+.login__form--remember {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.login__form--remember input {
+  margin-top: -0.3rem;
+  margin-right: 0.5rem;
+}
+.login__form--remember span {
+  font-size: 1.3rem;
+}
+.login__form--button {
+  width: 100%;
+  margin-bottom: 1.3rem;
+}
+.login__form--links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.login__form--links button {
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: transparent;
+  border-bottom: 2px solid #86ab28;
+}
+
+.dashboard__section {
+  height: 79vh;
+  background-image: url(/public/pak_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.dashboard__section--container {
+  padding: 3rem 0 0 7rem;
+  color: white;
+}
+.dashboard__section--container h4 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.domicile__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.domicile__form--container {
+  background-color: #f5f7f4;
+  width: 60%;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+.domicile__form--input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+.domicile__form--input label {
+  font-size: 0.9rem;
+}
+.domicile__form--input select {
+  background-color: #e6e0e0;
+  border-radius: 7px;
+  padding: 2px 7px;
+  height: 29px;
+  border: 1px solid gray;
+}
+.domicile__form--input input {
+  background-color: #e6e0e0;
+  border-radius: 7px;
+  padding: 2px 7px;
+  height: 25px;
+  border: 1px solid gray;
+}
+
+.domicile__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.domicile__card--container {
+  width: 55%;
+  background-color: #f5f7f4;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 1rem;
+  border: 1px solid green;
+}
+.domicile__card--img {
+  display: flex;
+  justify-content: flex-start;
+}
+.domicile__card--img img {
+  height: 100px;
+}
+.domicile__card--logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.domicile__card--logo svg {
+  padding: 1rem;
+  font-size: 4rem;
+  color: #86ab28;
+  border: 2px solid green;
+}
+.domicile__card--heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+.domicile__card--heading h1 {
+  margin: 0;
+}
+.domicile__card--heading p {
+  color: #86ab28;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.domicile__card--description p {
+  font-size: 1.2rem;
+}
+.domicile__card--signed {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+.domicile__card--signed h3 {
+  margin: 0 0 1rem 0;
+}
+.domicile__card--signed h5 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.domiclies__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.domiclies__list--container {
+  width: 90%;
+}
+
+.dataTable {
+  margin-top: 1rem;
+  background-color: white;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+/*# sourceMappingURL=globals.css.map */

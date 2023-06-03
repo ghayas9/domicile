@@ -1,0 +1,17 @@
+.dashboard__section {
+  height: 79vh;
+  background-image: url(/public/pak_logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--container {
+    padding: 3rem 0 0 7rem;
+    color: white;
+
+    h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+$--main-primary-color: rgb(76 132 25);
+$--light-green-color: #86ab28;
+$--link-color: black;
+
+html {
+  // font-family: "Roboto", sans-serif;
+  font-family: "Axiforma", sans-serif;
+}
+
+body {
+  background-color: $--main-primary-color !important;
+}
+
+a {
+  color: $--link-color;
+}
