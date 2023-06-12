@@ -20,20 +20,7 @@ const Signup = () => {
     passwordConfirm: "",
   });
 
-  const handleChangen = (event) => {
-    formatCNIC(event.target.value);
-  };
-  const formatCNIC = (value) => {
-    if(value.endsWith("-")){
-      setFormInput({ ...formInput, cnic: value.slice(0, -1) })
-    }
-    else if(value.length < 14){
-      const numericValue = value.replace(/\D/g, '');
-      const formattedValue = numericValue.replace(/(.{5})/g, '$1-');
-      setFormInput({ ...formInput, cnic: formattedValue })
-    }
-  };
-
+ 
   const handleChange = (e) =>
     setFormInput({ ...formInput, [e.target.name]: e.target.value });
 
@@ -150,27 +137,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
-
-
-
-const CNICFormat = () => {
-  
-
-  
-
-  
-
-  return (
-    <div>
-      <label htmlFor="cnic">CNIC:</label>
-      <input
-        type="text"
-        id="cnic"
-        value={cnic}
-        onChange={handleChange}
-        placeholder="12345-1234567-1"
-      />
-    </div>
-  );
-};

@@ -139,6 +139,13 @@ const getAllByUser = catchAsync(async (req, res, next)=>{
     data,
   });
 })
+
+
+const findByCNIC = catchAsync(async(req,res,next)=>{
+  const data = await domicileModel.findOne({CNIC:req.params.cnic})
+  if(data) return res.json({status: "success",data,message:"success message"})
+  return res.status(404).json({status: "false",message:"result not found"})
+})
 module.exports = {
   uploadImages,
   resizeImages,
@@ -149,4 +156,5 @@ module.exports = {
   UpdateOne,
   Approved,
   getAllByUser,
+  findByCNIC
 };

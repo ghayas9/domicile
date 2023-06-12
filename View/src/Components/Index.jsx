@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchBar from './SearchBar'
 
 export default function Index() {
   return (
@@ -18,7 +19,11 @@ export default function Index() {
             <br />and legal rights
           </h4>
         </div>
+       
       </div>
+        <div>
+          <SearchBar/>
+        </div>
     </div>
   )
 }

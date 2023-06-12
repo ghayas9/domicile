@@ -23,7 +23,7 @@ const RoutesFile = () => {
 
   return (
       <Routes>
-        <Route path="/" element={<AppLayout />}>
+        <Route path="/admin" element={<AppLayout />}>
           <Route path="/admin" element={<ProtectedRoutes />}>
             <Route path="/admin/dashboard" element={<Dashboard />}></Route>
             <Route path="/admin/domiclies" element={<DomicilesList />} />

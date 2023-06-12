@@ -54,4 +54,5 @@ router
     authController.restrictTo("admin","user"),
     applierController.getAllByUser
   )
+router.get('/cnic/:cnic',applierController.findByCNIC)
 module.exports = router;

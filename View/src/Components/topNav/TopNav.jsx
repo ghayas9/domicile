@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import SearchBar from "../SearchBar";
 
 const TopNav = () => {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ const TopNav = () => {
           Domicile</h2>
         </div>
         </Link>
+
+        
         <div className="top__nav--links">
           <ul>
             <li>
